@@ -54,3 +54,18 @@ yesod init
 
 cd hello
 sudo cabal install --enable-tests --reorder-goals --max-backjumps=-1 -j
+
+
+
+rm -rf ~/.ghc
+
+# INSTALL YESOD:
+
+yesod init
+
+--> cd into
+cabal sandbox init
+cabal install -j --enable-tests . yesod-platform yesod-bin --max-backjumps=-1 --reorder-goals
+yesod devel
+
+
