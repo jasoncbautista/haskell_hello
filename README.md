@@ -34,3 +34,23 @@ export PATH="$HOME/.cabal/bin:$PATH:$HOME/.rvm/bin"
 
 
 
+Yesod:
+http://www.yesodweb.com/page/quickstart
+cabal install alex happy yesod-bin
+
+
+
+http://www.yesodweb.com/page/quickstart
+
+
+sudo cabal install alex happy yesod-bin
+
+
+yesod init
+
+
+// hello
+// s
+
+cd hello
+sudo cabal install --enable-tests --reorder-goals --max-backjumps=-1 -j
